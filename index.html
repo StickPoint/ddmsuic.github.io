@@ -1,267 +1,181 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<!--<![endif]-->
-<!-- 顶点音乐官网  github首页 -->
-
+<html lang="zh">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>顶点音乐-官网-全网VIP音乐免费听</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/prettyPhoto.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="icon" href="pic/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"><link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/6.4.12/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/6.4.12/swiper-bundle.min.js"></script>
 </head>
-
-<body id="top">
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade ybrowser</a> to improve your experience.</p>
-    <![endif]-->
-
+<body>
     <header>
-        <!-- NAVIGATION -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <!-- LOGO -->
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <img src="img/logo.png" alt="">
-                    </a>
-                    <!-- END LOGO -->
-
-                </div>
-
-                <!-- TOGGLE NAV -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li><a class="page-scroll" href="#top">顶点音乐</a>
-                        </li>
-                        <li><a class="page-scroll" href="#services">音乐服务</a>
-                        </li>
-                        <li><a class="page-scroll" href="https://download.micronnetwork.com/ddmusic/StickPoint-release-lasted.apk">软件下载</a>
-                        </li>
-                        <li><a class="page-scroll" href="#contact">关于我们</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- TOGGLE NAV -->
-
-            </div>
-            <!-- /.container -->
-        </nav>
-        <!-- END NAVIGATION -->
+        <div class="container">
+            <a class="header-left" href="https://stickpoint.github.io/ddmsuic.github.io/">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                    <path  d="M251.32,32H236.59l-27.77-.52H118.39a8.54,8.54,0,0,0-7.67,4.78A343.39,343.39,0,0,1,74.6,82.45a442.74,442.74,0,0,1-41,38.92c-1,.85-5.26,5.26-5.26,5.26l-.08,44.1a4.44,4.44,0,0,0,7.57,3.11l57-57c6.28-6.27,11.22-2.2,11.22,6.67V271.86a61.64,61.64,0,0,0-16.31-2.17c-32.82,0-58.38,21.32-58.38,48.92s25.56,50,58.38,50,57.34-22.37,57.34-50V284.07l45.23-.7h20c17.88,0,20-.41,34.71,0,75.74,2.1,126.76-52.27,126.76-125.18S321.62,32.56,251.32,32Zm9.62,192.27a13.17,13.17,0,0,1-2.42.26l-33,.5H213.29a13,13,0,0,1-13-13V103.32a13,13,0,0,1,13-13H225.5l33,.5a12.36,12.36,0,0,1,2.42.26c27.77,5.92,47.71,37.3,47.71,66.56S288.71,218.3,260.94,224.22Z"/>
+                </svg>
+                <span>顶点音乐</span>
+            </a>
+            <a class="git" href="https://github.com/StickPoint/MusicCatch">Github -></a>
+            <ul class="header-right d-none d-md-block" id="nav">
+                <li class="header-navbar-item active"><a href="javascript:main.slideTo(0, 1000, true);">顶点音乐</a></li>
+                <li class="header-navbar-item"><a href="javascript:main.slideTo(1, 1000, true);">软件下载</a></li>
+<!--                <li class="header-navbar-item"><a href="javascript:main.slideTo(2, 1000, true);">音乐服务</a></li>-->
+                <li class="header-navbar-item"><a href="javascript:main.slideTo(2, 1000, true);">关于我们</a></li>
+            </ul>
+        </div>
     </header>
+    <div class="swiper-container" id="main">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
 
-    <!-- HOME -->
-    <div id="home-area">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
+                <div class="head-content">
+                    <div class="bg-mask"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <h2>令音乐回归本质&emsp;&emsp;</h2>
+                                <h2>&emsp;&emsp;以音乐传递快乐</h2>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="head-content-pics-pc d-none d-md-block">
+                                    <img src="pic/01.jpg" alt="">
+                                    <img src="pic/03.jpg" alt="">
+                                    <img src="pic/02.png" alt="">
+                                </div>
 
-                    <!-- HOME CONTENT -->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="home-content wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-                            <h1><font color="red">顶 点 音 乐 </font></h1>
-                            <p><font color="red">让 音 乐 传 递 更 多</font> <strong><font color="red">快 乐</font></strong> </p>
-							<p><font color="red">让 音 乐 回 归  <strong><font color="red">本 质</font></strong></font></p>
-                            <a class="button home" href="https://download.micronnetwork.com/ddmusic/StickPoint-release-lasted.apk"><font color="darkred">现在下载</font></a>
+                                <div class="swiper-container head-content-pics-phone d-block d-md-none" id="pic-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="pic/01.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="pic/03.jpg" alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="pic/02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <script>
+                                        var pic_swiper = new Swiper('#pic-swiper',{
+                                            direction : 'horizontal',
+                                            autoplay: true,
+                                        })
+                                    </script>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- END HOME CONTENT -->
-
-                    <!-- HOME FEATURE IMAGE -->
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="home-feature pull-right center-block wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
-                            <img class="img-responsive" src="img/app.png" alt="">
+                    <a id="to-down" class="d-none">
+                        <span>去下载</span><br>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                            <path d="M506.88 791.04c-10.752 0-21.504-4.096-29.184-12.288l-466.432-465.92c-15.36-16.384-14.848-41.984 1.024-57.344 15.872-15.872 41.472-15.872 57.344-0.512l466.432 466.432c11.776 11.776 15.36 29.696 8.704 45.056-6.144 14.848-21.504 24.576-37.888 24.576" p-id="1523" fill="#ffffff"></path><path d="M506.88 791.04c-16.896 0-31.744-9.728-38.4-25.6-6.656-15.36-2.56-33.28 9.216-45.056l477.184-477.184c16.384-14.848 41.472-14.336 56.832 1.536 15.36 15.36 16.384 40.96 1.536 56.832l-477.184 477.184c-7.68 8.192-18.432 12.288-29.184 12.288" p-id="1524" fill="#ffffff"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="second-content">
+                    <div class="container h-100">
+                        <div class="d-flex w-100 h-100 justify-content-center align-items-center flex-column">
+                            <svg class="app-ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                                <path fill="#D81E06" d="M251.32,32H236.59l-27.77-.52H118.39a8.54,8.54,0,0,0-7.67,4.78A343.39,343.39,0,0,1,74.6,82.45a442.74,442.74,0,0,1-41,38.92c-1,.85-5.26,5.26-5.26,5.26l-.08,44.1a4.44,4.44,0,0,0,7.57,3.11l57-57c6.28-6.27,11.22-2.2,11.22,6.67V271.86a61.64,61.64,0,0,0-16.31-2.17c-32.82,0-58.38,21.32-58.38,48.92s25.56,50,58.38,50,57.34-22.37,57.34-50V284.07l45.23-.7h20c17.88,0,20-.41,34.71,0,75.74,2.1,126.76-52.27,126.76-125.18S321.62,32.56,251.32,32Zm9.62,192.27a13.17,13.17,0,0,1-2.42.26l-33,.5H213.29a13,13,0,0,1-13-13V103.32a13,13,0,0,1,13-13H225.5l33,.5a12.36,12.36,0,0,1,2.42.26c27.77,5.92,47.71,37.3,47.71,66.56S288.71,218.3,260.94,224.22Z"/>
+                            </svg>
+                            <div class="row mb-3">
+                                <p class="col-12 col-md-6 offset-md-3">
+                                    顶点音乐（StickPoint Music）是于2021年新春由微米工作室与鑫软工作室合作开发的一款极简音乐播放器，以零广告，不收费为宗旨向广大用户提供免费的音乐播放服务。
+                                </p>
+                            </div>
+                            <div>
+                                <a class="button mx-3 mb-3 enable" target="_blank" href="https://download.micronnetwork.com/ddmusic/StickPoint-release-lasted.apk">
+                                    <i>&#xe81a;</i>
+                                    <span>Android版下载</span>
+                                </a>
+                                <a class="button mx-3 mb-3 disabled d-none d-md-inline-block" >
+                                    <i>&#xe69e;</i>
+                                    <span>Windows版下载</span>
+                                </a>
+                                <a class="button mx-3 mb-3 disabled d-none d-md-inline-block" >
+                                    <i>&#xe72c;</i>
+                                    <span>Mac OS版下载</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <!-- END HOME FEATURE IMAGE -->
+                </div>
+            </div>
+<!--            <div class="swiper-slide">-->
+<!--                <div class="third-content">-->
+<!--                    <div class="container h-100">-->
+<!--                        <div class="d-flex w-100 h-100 justify-content-center align-items-center flex-column">-->
+<!--                            <span class="title">音乐服务</span>-->
+<!--                            <div class="row">-->
 
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="swiper-slide">
+                <div class="forth-content">
+                    <div class="container h-100">
+                        <div class="d-flex w-100 h-100 justify-content-center align-items-center flex-column">
+                            <span class="title">关于我们</span>
+                            <div style="text-align: center; color: #FFFFFF; font-size: 18px;margin-bottom: 100px;line-height: 28px">
+                                我们是来自dqnu大庆师范学院的微米工作室&鑫软工作室! <br>
+                                    我们的github地址是： <a href="https://github.com/StickPoint/MusicCatch">github.com/StickPoint/MusicCatch</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="swiper-scrollbar"></div>
     </div>
-    <!-- END HOME -->
-
-    <!-- SERVICES -->
-    <section id="services" class="section text-center">
-        <div class="container">
-            <h2 class="section-title wow fadeIn">音乐服务</h2>
-            <div class="row">
-
-                <!-- SINGLE SERVICE -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service text-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0s">
-                        <div class="service-content text-left">
-                            <i class="fa fa-desktop fa-3x"></i>
-                            <h3>三大音乐播放源</h3>
-                            <p>内部集成QQ音乐，网易云音乐，酷狗音乐三大音乐源</p>
-                            <a href="#">#顶点音乐PC端开发中</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- END SINGLE SERVICE -->
-
-                <!-- SINGLE SERVICE -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                        <div class="service-title">
-                            <i class="fa fa-mobile-phone fa-3x"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>手机APP免费使用</h3>
-                            <p>让音乐回归本质，让音乐传递更多欢乐！</p>
-                            <a href="#">#顶点音乐安卓端</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- END SINGLE SERVICE -->
-
-                <!-- SINGLE SERVICE -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="single-service text-left wow fadeInRight" data-wow-duration="1s" data-wow-delay=".6s">
-                        <div class="service-title">
-                            <i class="fa fa-code fa-3x"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>定期维护更新</h3>
-                            <p>作为github的安卓音乐入门级APP，我们会持续更新代码，只为让音乐传递更多快乐！</p>
-                            <a href="#">#顶点音乐开发人员</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- END SINGLE SERVICE -->
-    
-
-             
-
-            </div>
-            <!--.row-->
-        </div>
-        <!--/.container -->
-    </section>
-    <!-- END SERVICES -->
-
-
-    <!-- TESTIMONIAL -->
-    <section id="testimonial" class="section text-center">
-        <h2 class="section-title">软件下载</h2>
-        <div class="container">
-
-            <!-- TESTIMONIAL SLIDER -->
-            <div id="owl-demo" class="owl-carousel owl-theme">
-
-                <!-- SINGLE TESTIMONIAL -->
-                <div class="item">
-                    <div class="single-testimonial">
-                        <img class="center-block wow fadeInDown" data-wow-duration="1s" src="img/1.png" alt="Testimoinial">
-                        <p class="wow fadeInDown" data-wow-duration="1s">
-                            顶点音乐APP（安卓版）
-                        </p>
-                       
-                    </div>
-                </div>
-                <!-- END SINGLE TESTIMONIAL -->
-
-                <!-- SINGLE TESTIMONIAL -->
-                <div class="item">
-                    <div class="single-testimonial">
-                        <img class="center-block wow fadeInDown" data-wow-duration="1s" src="img/2.png" alt="Testimoinial">
-                        <p class="wow fadeInDown" data-wow-duration="1s">
-                            顶点音乐PC版（开发中，预计近期上线）
-                        </p>
-                        
-                    </div>
-                </div>
-                <!-- END SINGLE TESTIMONIAL -->
-
-                <!-- SINGLE TESTIMONIAL -->
-                <div class="item">
-                    <div class="single-testimonial">
-                        <img class="center-block wow fadeInDown" data-wow-duration="1s" src="img/3.png" alt="Testimoinial">
-                        <p class="wow fadeInDown" data-wow-duration="1s">
-                           顶点音乐APP-IOS版（开发中）
-                        </p>
-                   
-                    </div>
-                </div>
-                <!-- END SINGLE TESTIMONIAL -->
-
-            </div>
-            <!-- END TESTIMONIAL SLIDER -->
-
-            <div class="testimonial-action wow fadeInUp" data-wow-duration="1s">
-                <a class="button testimonial" href="https://download.micronnetwork.com/ddmusic/StickPoint-release-lasted.apk">进入下载页面</a>
-            </div>
-
-        </div>
-        <!--/.container -->
-    </section>
-    <!-- END TESTIMONIAL -->
-
-
-    <!-- CONTACT US -->
-    <section id="contact" class="section text-center">
-        <div class="container">
-            <h2 class="section-title">关于我们</h2>
-            <div class="row">
-				<p>我们是来自dqnu大庆师范学院的微米工作室&鑫软工作室</p>
-				<p>我们的github地址是：
-				<a href="https://github.com/StickPoint/MusicCatch">点击此处即可抵达</a>
-				</p>
-            </div>
-        </div>
-    </section>
-    <!-- END CONTACT US -->
-
-    <!-- FOOTER -->
     <footer>
-        <div class="container">
-            <div class="row">
-
-                <!-- FOOTER MENU -->
-                <div class="col-md-6">
-                    <div class="footer-menu">
-                        <p><font color="red">软件请勿用于非法途径，此软件仅限于学习交流！</font></p>
-                    </div>
-                </div>
-                <!-- END FOOTER MENU -->
-
-                <!-- FOOTER CONTENT -->
-                <div class="col-md-6">
-                    <div class="footer-content text-right">
-                        <p>&copy; 2020-2021 顶点音乐 All Rights Reserved</p>
-                    </div>
-                </div>
-                <!-- END FOOTER CONTENT -->
-
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- ./container -->
+        <div>软件请勿用于非法途径，此软件仅限于学习交流！<br>
+        © 2020-2021 顶点音乐 All Rights Reserved</div>
     </footer>
-    <!-- END FOOTER -->
-	
-    <!-- js files -->
-    <script src="js/vendor/jquery-1.10.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/prettyPhoto.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        var main = new Swiper('#main',{
+            // effect : 'fade',
+            observer:true,
+            observeSlideChildren:true,
+            initialSlide :0,
+            speed:1000,
+            height : window.innerHeight,
+            setWrapperSize :true,
+            direction : 'vertical',
+            autoplay: false,
+            roundLengths : true,
+            mousewheel: true,
+            forceToAxis: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+                draggable: true,
+            },
+            on: {
+                resize: function(){
+                    this.params.height = window.innerHeight;
+                    this.update();
+                },
+                slideChange: function () {
+                    let nav_li = $("#nav>li");
+                    for (let i = 0; i < nav_li.length; i++){
+                        if (this.activeIndex == i){
+                            nav_li.eq(i).addClass("active");
+                        }else {
+                            nav_li.eq(i).removeClass("active");
+                        }
+                    }
+                }
+            }
+        })
+    </script>
 </body>
 </html>
